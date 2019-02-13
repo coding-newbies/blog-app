@@ -10,7 +10,7 @@ import { AppComponent } from 'app/components/app/app.component';
 import { SharedModule } from 'app/modules/shared/shared.module';
 import { DataService } from 'app/modules/shared/http-services/data.service';
 import { EnvServiceProvider } from 'app/modules/shared/environement-service/env.provider';
-import { RxRootStoreModule } from 'app/store/rxjs';
+import { AppAkStoreModule } from 'app/store';
 
 @NgModule({
   imports: [
@@ -23,10 +23,7 @@ import { RxRootStoreModule } from 'app/store/rxjs';
     InMemoryWebApiModule.forRoot(DataService),
     ErrorModule,
     SharedModule.forRoot(),
-    // AppNgrxStoreModule.forRoot()
-    // AppNgxsStoreModule.forRoot()
-    // AppAkitaStoreModule.forRoot()
-    RxRootStoreModule.forRoot()
+    AppAkStoreModule.forRoot()
   ],
   declarations: [
     AppComponent

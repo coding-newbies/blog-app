@@ -1,7 +1,7 @@
 import { StoreConfig } from '@datorama/akita';
 import { Dictionary } from 'extension';
 import { ModuleNameEnum } from 'app/modules/shared/enums/module-name.enum';
-import { BaseAkStore } from 'app/store/akita';
+import { BaseAkStore } from 'app/store';
 import { CommandDispatcher } from 'app/modules/shared/dispatchers';
 import { UserAsyncService } from 'app/modules/user/services';
 import { UserState, initUserState, UserActionNames, GetUsersAction, UserSuccessAction, UserFailedAction } from 'app/modules/user/core';

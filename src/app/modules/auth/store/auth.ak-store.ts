@@ -2,7 +2,7 @@ import { Dictionary } from 'extension';
 import { Injectable } from '@angular/core';
 import { CommandDispatcher } from 'app/modules/shared/dispatchers';
 import { AutoUnsubscriber } from 'app/modules/shared/safe-unsubscriber';
-import { BaseAkStore } from 'app/store/akita';
+import { BaseAkStore } from 'app/store/';
 import { AuthState, initAuthState, AuthActionNames, LoginAction, AuthFailedAction, AuthSuccessAction } from 'app/modules/auth/core';
 import { AuthAsyncService } from 'app/modules/auth/services';
 import { SaveJwtAction } from 'app/core';

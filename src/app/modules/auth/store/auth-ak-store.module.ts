@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AuthAkStore, AuthAkQueries } from 'app/modules/auth/store/akita';
+import { AuthAkStore } from 'app/modules/auth/store/auth.ak-store';
+import { AuthAkQueries } from 'app/modules/auth/store/auth.ak-queries';
 import { AuthQueries } from 'app/modules/auth/core';
 
 @NgModule({
@@ -7,8 +8,8 @@ import { AuthQueries } from 'app/modules/auth/core';
   providers: [
     AuthAkStore,
     {
-    provide: AuthQueries,
-    useClass: AuthAkQueries
+      provide: AuthQueries,
+      useClass: AuthAkQueries
     }
   ]
 })

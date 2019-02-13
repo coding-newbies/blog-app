@@ -4,7 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthRouting } from 'app/modules/auth/auth.routing';
 import { AuthAsyncService, AuthHttpService } from 'app/modules/auth/services';
-import { AuthRxStoreModule } from 'app/modules/auth/store/rxjs';
+import { AuthAkStoreModule } from 'app/modules/auth/store';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -12,10 +12,7 @@ import { AuthRxStoreModule } from 'app/modules/auth/store/rxjs';
     CommonModule,
     ReactiveFormsModule,
     AuthRouting,
-    // AuthNgrxStoreModule
-    // AuthNgxsStoreModule
-    // AuthAkitaStoreModule
-    AuthRxStoreModule
+    AuthAkStoreModule
   ],
   providers: [
     {

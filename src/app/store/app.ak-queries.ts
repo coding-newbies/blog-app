@@ -1,5 +1,6 @@
 import { CommandDispatcher } from 'app/modules/shared/dispatchers';
-import { BaseAkQueries, AppAkStore } from 'app/store/akita';
+import { BaseAkQueries } from 'app/store/base.ak-queries';
+import { AppAkStore } from 'app/store/app.ak-store';
 import { AppState, AppQueries } from 'app/core';
 
 export class AppAkQueries extends BaseAkQueries<AppState> implements AppQueries {

@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { CommandDispatcher } from 'app/modules/shared/dispatchers';
 import { AutoUnsubscriber } from 'app/modules/shared/safe-unsubscriber';
-import { BaseAkQueries, AppAkQueries } from 'app/store/akita';
-import { AuthState, AuthQueries } from 'app/modules/auth/core';
-import { AuthAkStore } from 'app/modules/auth/store/akita';
+import { BaseAkQueries } from 'app/store/base.ak-queries';
+import { AppAkQueries } from 'app/store/app.ak-queries';
+import { AuthState } from 'app/modules/auth/core/auth.state-model';
+import { AuthQueries } from 'app/modules/auth/core/auth-queries.interface';
+import { AuthAkStore } from 'app/modules/auth/store/auth.ak-store';
 
 @AutoUnsubscriber()
 @Injectable()
